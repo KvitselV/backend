@@ -269,9 +269,9 @@ else {
       setcookie('check_error', '', 100000);
     }
     
-	$user = 'u52927';
-	$pass = '5758562';	
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+	$user = 'u52966';
+	$pass = '8339862';	
+    $db = new PDO('mysql:host=localhost;dbname=u52966', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login']) and !$errors) {
       $id=$_SESSION['uid'];
       $upd=$db->prepare("UPDATE form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio WHERE id=:id");
